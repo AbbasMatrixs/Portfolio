@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hassan's Portfolio - Software Engineer & Web Developer">
+  <meta name="keywords" content="web developer, software engineer, portfolio, JavaScript, HTML, CSS, React">
+  <meta property="og:title" content="Hassan's Portfolio">
+  <meta property="og:description" content="Explore my projects and get in touch with me for collaborations.">
+  <title>Hassan's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+      <div class='nav'>
+        <div class='part1'>
+          <a href="/"><span>Portfo</span><span id='lio'>Lio</span></a>
+        </div>
+        <div class='part2'>
+            <a href="/" href>Home</a>
+            <a href="#about">About me</a>
+            <a href="#Skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+  <section id="main" class="hero">
+      <div class="hero-content">
+        <h1 id="typing-effect">Hey! it's Hassan!</h1>
+        <p>(A passionate Software Engineer & Web Developer)</p>
+        <a href="./Components/Resume.docx" download><button  id="download_btn">Download Resume</button></a>
+      </div>
+    </section>
+  <!-- About -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-content">
+        <h2>Who is Hassan Abbas</h2>
+        <p>
+          A dedicated and enthusiastic Bachelor of Software Engineering (BSSE) student with a passion for building innovative software solutions. My journey in technology began with a curiosity to solve real-world problems, and it has grown into a deep interest in programming, cloud computing, and software development. </p>
+        <p>I have completed several projects, including an Amazon Clone and a Tic Tac Toe game, which showcase my skills in front-end development using HTML, CSS, and JavaScript. I also developed an ATM Machine System in C and created a Chatbot using Python.</p>
+        <p>Currently, I am advancing my skills by pursuing a Cloud Data Engineering course, where I have gained hands-on experience with Python, Git, and GitHub. My focus is on enhancing my expertise in cloud computing, data engineering, and collaborative development.</p>
+        <p>I am always eager to take on new challenges and collaborate on exciting projects. Let's connect and work together to create impactful software solutions!</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+      <div class="about-image">
+        <img src="./Components/me.jpeg" alt="Hassan's Photo">
+      </div>
+    </div>
+  </section>
+  <!-- Skills -->
+<section id="Skills" class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+        <div class="skill">
+            <img src="./Components/html.png" alt="HTML">
+            <p>HTML</p>
+        </div>
+        <div class="skill">
+            <img src="./Components/css.png" alt="CSS">
+            <p>CSS</p>
+        </div>
+        <div class="skill">
+            <img src="./Components/js.png" alt="JavaScript">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill">
+            <img src="./Components/python.png" alt="Python">
+            <p>Python</p>
+        </div>
+        <div class="skill">
+            <img src="./Components/mysql.png" alt="Node.js">
+            <p>MySQL</p>
+        </div>
+    </div>
+</section>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <i class="fas fa-shopping-cart project-icon"></i>
+        <h3>Ecommerce Website Clone</h3>
+        <p>Amazon and Shopify-like websites using HTML and CSS.</p>
+      </div>
+      <div class="project-card">
+        <i class="fas fa-university project-icon"></i>
+        <h3>ATM Machine System</h3>
+        <p>Developed an ATM system using the C Language.</p>
+      </div>
+      <div class="project-card">
+        <i class="fas fa-comments project-icon"></i>
+        <h3>Chatbot Creation</h3>
+        <p>Create a chatbot (for some of few questions) using Python.</p>
+      </div>
+      <div class="project-card">
+        <i class="fas fa-gamepad project-icon"></i>
+        <h3>Tic Tac Toe Game</h3>
+        <p>built Tic Tac Toe using HTML, CSS & JavaScript.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <!-- <p>Find me on these platforms or send me a message!</p> -->
+
+    <!-- Social Media Links -->
+    <div class="social-icons">
+      <a href="https://github.com/AbbasMatrixs" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.facebook.com/haydenAri07" target="_blank" title="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/hassan-abbas-109334231/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/haydenari07/" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <section id="contact">
+      <h2>Let's Connect!</h2>   
+   <!-- Contact Form -->
+      <div class="contact-form" style="max-width: 600px; margin: 0 auto;">
+          <form>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea name="message" placeholder="Write here" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+  <!-- Footer -->
+  <footer>
+    <p> Hassan Abbas &copy; 2024 All right Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
