@@ -1,50 +1,35 @@
-// // Open Modal
-// function openModal(projectId) {
-//     document.getElementById(projectId).classList.add('open');
-//   }
-  
-//   // Close Modal
-//   function closeModal(projectId) {
-//     document.getElementById(projectId).classList.remove('open');
-//   }
-  
-  // Contact Form Validation
+// Contact Form Validation
   document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    
+    e.preventDefault();    
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
-  
     if (name && email && message) {
       alert('Message sent successfully!');
-      // can add code to send the message to your server here.
     } else {
       alert('Please fill out all fields.');
     }
   });
 // Smooth Scroll for Button
-function scrollToNextSection() {
-    document.getElementById("projects").scrollIntoView({ behavior: 'smooth' });
-  }
-    
-  const reverseButton = document.getElementById('reverse-button');
+// function scrollToNextSection() {
+//     document.getElementById("projects").scrollIntoView({ behavior: 'smooth' });
+//   }
+//   const reverseButton = document.getElementById('reverse-button');
+//   window.addEventListener('scroll', () => {
+//     if (window.scrollY > 200) { // Show button after scrolling 200px
+//       reverseButton.style.display = 'block';
+//     } else {
+//       reverseButton.style.display = 'none';
+//     }
+//   });
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) { // Show button after scrolling 200px
-      reverseButton.style.display = 'block';
-    } else {
-      reverseButton.style.display = 'none';
-    }
-  });
 
 // Show the back-to-top button when scrolling
 const backToTopButton = document.getElementById('back-to-top');
-
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 200) { // Show button after scrolling 200px
+  if (window.scrollY > 100) { // Show button after scrolling 200px
     backToTopButton.style.display = 'block';
-  } else {
+  } else{
     backToTopButton.style.display = 'none';
   }
 });
